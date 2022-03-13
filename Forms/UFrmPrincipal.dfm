@@ -4,8 +4,8 @@ object FrmPrincipal: TFrmPrincipal
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'UMS - User Management System'
-  ClientHeight = 309
-  ClientWidth = 645
+  ClientHeight = 336
+  ClientWidth = 582
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -18,8 +18,8 @@ object FrmPrincipal: TFrmPrincipal
   TextHeight = 13
   object StatusBar: TStatusBar
     Left = 0
-    Top = 290
-    Width = 645
+    Top = 317
+    Width = 582
     Height = 19
     Panels = <
       item
