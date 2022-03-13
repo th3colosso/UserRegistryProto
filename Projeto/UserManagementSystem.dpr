@@ -2,13 +2,14 @@ program UserManagementSystem;
 
 uses
   Vcl.Forms,
-  UFrmPrincipal in '..\Forms\UFrmPrincipal.pas' {Form1};
+  UFrmPrincipal in '..\Forms\UFrmPrincipal.pas' {FrmPrincipal},
+  UFrmLogin in '..\Forms\UFrmLogin.pas' {FrmLogin};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TFrmLogin, FrmLogin);
   Application.Run;
 end.

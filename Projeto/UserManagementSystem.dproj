@@ -103,7 +103,11 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="..\Forms\UFrmPrincipal.pas">
-            <Form>Form1</Form>
+            <Form>FrmPrincipal</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="..\Forms\UFrmLogin.pas">
+            <Form>FrmLogin</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
