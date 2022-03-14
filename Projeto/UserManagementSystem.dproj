@@ -86,7 +86,8 @@
         <DCC_ExeOutput>C:\Users\matth\Documents\Embarcadero\Studio\Projects\TestePraticoCartSys\Exe\</DCC_ExeOutput>
         <DCC_DcuOutput>C:\Users\matth\Documents\Embarcadero\Studio\Projects\TestePraticoCartSys\DCU\</DCC_DcuOutput>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
-        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_Locale>1046</VerInfo_Locale>
+        <Icon_MainIcon>UserManagementSystem_Icon.ico</Icon_MainIcon>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -108,6 +109,10 @@
         </DCCReference>
         <DCCReference Include="..\Forms\UFrmLogin.pas">
             <Form>FrmLogin</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="..\Forms\UFrmPesquisa.pas">
+            <Form>FrmPesquisa</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">

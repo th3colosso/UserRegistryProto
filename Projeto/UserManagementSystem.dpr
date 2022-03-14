@@ -3,7 +3,8 @@ program UserManagementSystem;
 uses
   Vcl.Forms,
   UFrmPrincipal in '..\Forms\UFrmPrincipal.pas' {FrmPrincipal},
-  UFrmLogin in '..\Forms\UFrmLogin.pas' {FrmLogin};
+  UFrmLogin in '..\Forms\UFrmLogin.pas' {FrmLogin},
+  UFrmPesquisa in '..\Forms\UFrmPesquisa.pas' {FrmPesquisa};
 
 {$R *.res}
 
@@ -11,5 +12,6 @@ begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TFrmLogin, FrmLogin);
+  Application.CreateForm(TFrmPrincipal, FrmPrincipal);
   Application.Run;
 end.
