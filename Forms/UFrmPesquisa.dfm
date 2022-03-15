@@ -33,7 +33,6 @@ object FrmPesquisa: TFrmPesquisa
     ParentBackground = False
     ParentFont = False
     TabOrder = 0
-    ExplicitWidth = 885
   end
   object Panel4: TPanel
     Left = 0
@@ -44,7 +43,6 @@ object FrmPesquisa: TFrmPesquisa
     Color = clGradientActiveCaption
     ParentBackground = False
     TabOrder = 1
-    ExplicitWidth = 885
     DesignSize = (
       894
       46)
@@ -97,7 +95,6 @@ object FrmPesquisa: TFrmPesquisa
       Caption = '&Pesquisar'
       TabOrder = 2
       OnClick = btnPesquisarClick
-      ExplicitLeft = 681
     end
     object btnImprimir: TBitBtn
       Left = 793
@@ -108,7 +105,6 @@ object FrmPesquisa: TFrmPesquisa
       Caption = '&Imprimir'
       TabOrder = 3
       OnClick = btnImprimirClick
-      ExplicitLeft = 784
     end
     object cmbTipoPesquisa: TComboBox
       Left = 11
@@ -184,7 +180,7 @@ object FrmPesquisa: TFrmPesquisa
       FieldName = 'CODUSUARIO'
       FieldLength = 0
       DataType = dtInteger
-      DisplayWidth = 0
+      DisplayWidth = 10
       Position = 0
     end
     object pipeRelatorioppField2: TppField
@@ -398,10 +394,10 @@ object FrmPesquisa: TFrmPesquisa
         UserName = 'Line3'
         Border.mmPadding = 0
         Weight = 0.750000000000000000
-        mmHeight = 3969
-        mmLeft = 2117
-        mmTop = 4233
-        mmWidth = 195527
+        mmHeight = 4233
+        mmLeft = 1411
+        mmTop = 4145
+        mmWidth = 193323
         BandType = 0
         LayerName = Foreground
       end
@@ -441,9 +437,9 @@ object FrmPesquisa: TFrmPesquisa
         FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3969
-        mmLeft = 57150
+        mmLeft = 61383
         mmTop = 0
-        mmWidth = 12700
+        mmWidth = 14993
         BandType = 0
         LayerName = Foreground
       end
@@ -462,9 +458,9 @@ object FrmPesquisa: TFrmPesquisa
         FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3969
-        mmLeft = 84667
+        mmLeft = 91017
         mmTop = 0
-        mmWidth = 23283
+        mmWidth = 26458
         BandType = 0
         LayerName = Foreground
       end
@@ -482,7 +478,7 @@ object FrmPesquisa: TFrmPesquisa
         FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3969
-        mmLeft = 131234
+        mmLeft = 139858
         mmTop = 0
         mmWidth = 21167
         BandType = 0
@@ -503,9 +499,9 @@ object FrmPesquisa: TFrmPesquisa
         FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3969
-        mmLeft = 160867
+        mmLeft = 169667
         mmTop = 0
-        mmWidth = 29633
+        mmWidth = 22401
         BandType = 0
         LayerName = Foreground
       end
@@ -555,7 +551,7 @@ object FrmPesquisa: TFrmPesquisa
         mmHeight = 3969
         mmLeft = 12700
         mmTop = 0
-        mmWidth = 42333
+        mmWidth = 46567
         BandType = 4
         LayerName = Foreground
       end
@@ -565,6 +561,7 @@ object FrmPesquisa: TFrmPesquisa
         Border.mmPadding = 0
         DataField = 'CPF'
         DataPipeline = pipeRelatorio
+        DisplayFormat = '###\.###\.###\-##;0; '
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Name = 'Arial'
@@ -574,9 +571,9 @@ object FrmPesquisa: TFrmPesquisa
         Transparent = True
         DataPipelineName = 'pipeRelatorio'
         mmHeight = 3969
-        mmLeft = 57150
+        mmLeft = 61383
         mmTop = 0
-        mmWidth = 25400
+        mmWidth = 27693
         BandType = 4
         LayerName = Foreground
       end
@@ -596,9 +593,9 @@ object FrmPesquisa: TFrmPesquisa
         Transparent = True
         DataPipelineName = 'pipeRelatorio'
         mmHeight = 3969
-        mmLeft = 84667
+        mmLeft = 91017
         mmTop = 0
-        mmWidth = 44450
+        mmWidth = 47625
         BandType = 4
         LayerName = Foreground
       end
@@ -608,6 +605,7 @@ object FrmPesquisa: TFrmPesquisa
         Border.mmPadding = 0
         DataField = 'TELEFONE'
         DataPipeline = pipeRelatorio
+        DisplayFormat = '!\(##\)\ #####\-####;0; '
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Name = 'Arial'
@@ -617,7 +615,7 @@ object FrmPesquisa: TFrmPesquisa
         Transparent = True
         DataPipelineName = 'pipeRelatorio'
         mmHeight = 3969
-        mmLeft = 131234
+        mmLeft = 139858
         mmTop = 0
         mmWidth = 27517
         BandType = 4
@@ -639,9 +637,9 @@ object FrmPesquisa: TFrmPesquisa
         Transparent = True
         DataPipelineName = 'pipeRelatorio'
         mmHeight = 3969
-        mmLeft = 160867
+        mmLeft = 169667
         mmTop = 0
-        mmWidth = 29633
+        mmWidth = 12965
         BandType = 4
         LayerName = Foreground
       end
@@ -665,7 +663,7 @@ object FrmPesquisa: TFrmPesquisa
         TextAlignment = taCentered
         Transparent = True
         mmHeight = 3704
-        mmLeft = 189442
+        mmLeft = 185042
         mmTop = 1852
         mmWidth = 7408
         BandType = 8
@@ -679,7 +677,7 @@ object FrmPesquisa: TFrmPesquisa
         mmHeight = 3969
         mmLeft = 1323
         mmTop = 794
-        mmWidth = 195439
+        mmWidth = 193323
         BandType = 8
         LayerName = Foreground
       end
@@ -696,11 +694,10 @@ object FrmPesquisa: TFrmPesquisa
         Font.Style = []
         FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
         FormFieldSettings.FormFieldType = fftNone
-        TextAlignment = taCentered
         Transparent = True
         mmHeight = 3704
         mmLeft = 3175
-        mmTop = 1765
+        mmTop = 1852
         mmWidth = 43392
         BandType = 8
         LayerName = Foreground
@@ -720,7 +717,7 @@ object FrmPesquisa: TFrmPesquisa
         mmHeight = 3969
         mmLeft = 1323
         mmTop = 704
-        mmWidth = 195439
+        mmWidth = 193323
         BandType = 7
         LayerName = Foreground
       end

@@ -5,7 +5,7 @@ object FrmPrincipal: TFrmPrincipal
   BorderStyle = bsSingle
   Caption = 'UMS - User Management System'
   ClientHeight = 360
-  ClientWidth = 688
+  ClientWidth = 594
   Color = clBtnFace
   Constraints.MinWidth = 600
   Font.Charset = DEFAULT_CHARSET
@@ -22,7 +22,7 @@ object FrmPrincipal: TFrmPrincipal
   object StatusBar: TStatusBar
     Left = 0
     Top = 341
-    Width = 688
+    Width = 594
     Height = 19
     Hint = 'Inicia um novo cadastro'
     AutoHint = True
@@ -36,23 +36,21 @@ object FrmPrincipal: TFrmPrincipal
       item
         BiDiMode = bdLeftToRight
         ParentBiDiMode = False
-        Text = 'Vers'#227'o 1.0.0.0'
+        Text = 'Vers'#227'o 1.0.0.1'
         Width = 20
       end>
     ParentShowHint = False
     ShowHint = True
-    ExplicitWidth = 594
   end
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 688
+    Width = 594
     Height = 65
     Align = alTop
     Color = clSkyBlue
     ParentBackground = False
     TabOrder = 1
-    ExplicitWidth = 594
     object btnNovo: TBitBtn
       Left = 16
       Top = 14
@@ -127,13 +125,12 @@ object FrmPrincipal: TFrmPrincipal
   object Panel2: TPanel
     Left = 0
     Top = 299
-    Width = 688
+    Width = 594
     Height = 42
     Align = alBottom
     Color = clActiveCaption
     ParentBackground = False
     TabOrder = 2
-    ExplicitWidth = 594
     object btnSair: TBitBtn
       Left = 518
       Top = 5
@@ -157,12 +154,11 @@ object FrmPrincipal: TFrmPrincipal
   object pnlDados: TPanel
     Left = 0
     Top = 65
-    Width = 688
+    Width = 594
     Height = 234
     Align = alClient
     Enabled = False
     TabOrder = 3
-    ExplicitWidth = 594
     object Label1: TLabel
       Left = 44
       Top = 14
@@ -278,16 +274,18 @@ object FrmPrincipal: TFrmPrincipal
       Height = 21
       DataField = 'LOGIN'
       DataSource = dsUsuario
+      MaxLength = 20
       TabOrder = 1
     end
     object txtCPF: TDBEdit
       Left = 44
-      Top = 159
+      Top = 156
       Width = 147
       Height = 21
       DataField = 'CPF'
       DataSource = dsUsuario
       TabOrder = 4
+      OnExit = txtCPFExit
     end
     object txtEmail: TDBEdit
       Left = 44
@@ -296,7 +294,9 @@ object FrmPrincipal: TFrmPrincipal
       Height = 21
       DataField = 'EMAIL'
       DataSource = dsUsuario
+      MaxLength = 100
       TabOrder = 6
+      OnExit = txtEmailExit
     end
     object txtTelefone: TDBEdit
       Left = 220
@@ -314,6 +314,7 @@ object FrmPrincipal: TFrmPrincipal
       Height = 21
       DataField = 'NOME'
       DataSource = dsUsuario
+      MaxLength = 100
       TabOrder = 3
     end
     object txtSenha: TDBEdit
@@ -419,9 +420,6 @@ object FrmPrincipal: TFrmPrincipal
   end
   object conexao: TFDConnection
     Params.Strings = (
-      
-        'Database=C:\Users\matth\Documents\Embarcadero\Studio\Projects\Te' +
-        'stePraticoCartSys\Exe\Banco\DB_UserManagementSystem.FDB'
       'User_Name=SYSDBA'
       'Password=masterkey'
       'Protocol=TCPIP'
@@ -455,7 +453,7 @@ object FrmPrincipal: TFrmPrincipal
       FieldName = 'CPF'
       Origin = 'CPF'
       Required = True
-      EditMask = '###.###.###\-##;1;_'
+      EditMask = '###.###.###\-##;0;_'
       Size = 15
     end
     object qryGeralEMAIL: TStringField
@@ -467,7 +465,7 @@ object FrmPrincipal: TFrmPrincipal
     object qryGeralTELEFONE: TStringField
       FieldName = 'TELEFONE'
       Origin = 'TELEFONE'
-      EditMask = '!\(##\)#####-####;1;_'
+      EditMask = '!\(##\)#####-####;0;_'
       Size = 15
     end
     object qryGeralLOGIN: TStringField
