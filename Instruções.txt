@@ -1,0 +1,7 @@
+Credenciais Banco de dados:
+User -> SYSDBA
+PassWord -> masterkey
+
+Usuario Padrão para Logar na Aplicação
+User -> admin
+PassWord -> admin

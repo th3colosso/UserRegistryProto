@@ -283,8 +283,7 @@ object FrmPrincipal: TFrmPrincipal
       Height = 21
       DataField = 'CPF'
       DataSource = dsUsuario
-      MaxLength = 14
-      TabOrder = 2
+      TabOrder = 4
     end
     object txtEmail: TDBEdit
       Left = 44
@@ -293,7 +292,7 @@ object FrmPrincipal: TFrmPrincipal
       Height = 21
       DataField = 'EMAIL'
       DataSource = dsUsuario
-      TabOrder = 3
+      TabOrder = 6
     end
     object txtTelefone: TDBEdit
       Left = 220
@@ -302,8 +301,7 @@ object FrmPrincipal: TFrmPrincipal
       Height = 21
       DataField = 'TELEFONE'
       DataSource = dsUsuario
-      MaxLength = 14
-      TabOrder = 4
+      TabOrder = 5
     end
     object txtNome: TDBEdit
       Left = 44
@@ -312,7 +310,7 @@ object FrmPrincipal: TFrmPrincipal
       Height = 21
       DataField = 'NOME'
       DataSource = dsUsuario
-      TabOrder = 5
+      TabOrder = 3
     end
     object txtSenha: TDBEdit
       Left = 304
@@ -322,7 +320,7 @@ object FrmPrincipal: TFrmPrincipal
       DataField = 'SENHA'
       DataSource = dsUsuario
       PasswordChar = '*'
-      TabOrder = 6
+      TabOrder = 2
     end
     object btnMostraSenha: TBitBtn
       Left = 487
@@ -366,6 +364,7 @@ object FrmPrincipal: TFrmPrincipal
         B6B8B9B6B8B9B6B8B9B6B8B9B6B8B9B6B8B9B6B8B9B6B8B9B6B8B9B6B8B9B6B8
         B9B6B8B9B6B8B9B60000}
       TabOrder = 7
+      TabStop = False
       OnClick = btnMostraSenhaClick
     end
     object btnEscondeSenha: TBitBtn
@@ -410,6 +409,7 @@ object FrmPrincipal: TFrmPrincipal
         B6B8B9B6B8B9B6B8B9B6B8B9B6B8B9B6B8B9B6B8B9B6B8B9B6B8B9B6B8B9B6B8
         B9B6B8B9B6B8B9B60000}
       TabOrder = 8
+      TabStop = False
       OnClick = btnEscondeSenhaClick
     end
   end
@@ -425,12 +425,10 @@ object FrmPrincipal: TFrmPrincipal
       'Port=3050'
       'CharacterSet=WIN1252'
       'DriverID=FB')
-    Connected = True
     Left = 640
     Top = 64
   end
   object qryGeral: TFDQuery
-    Active = True
     Connection = conexao
     SQL.Strings = (
       'select * from usuario order by codusuario')
@@ -453,7 +451,7 @@ object FrmPrincipal: TFrmPrincipal
       FieldName = 'CPF'
       Origin = 'CPF'
       Required = True
-      EditMask = '000.000.000\-00;1;_'
+      EditMask = '###.###.###\-##;1;_'
       Size = 15
     end
     object qryGeralEMAIL: TStringField

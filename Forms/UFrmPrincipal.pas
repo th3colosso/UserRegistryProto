@@ -106,6 +106,7 @@ begin
   qryGeral.Cancel;
   pnlDados.enabled := false;
   dbNavigator.Enabled := True;
+  FormShow(nil);
 end;
 
 procedure TFrmPrincipal.btnDeletarClick(Sender: TObject);
@@ -131,6 +132,12 @@ begin
     pnlDados.Enabled := True;
     qryGeral.Edit;
     dbNavigator.Enabled := false;
+    btnNovo.Enabled := False;
+    btnEditar.Enabled := False;
+    btnDeletar.Enabled := False;
+    btnAtualizar.Enabled := False;
+    btnPesquisar.Enabled := False;
+    btnGravar.Enabled := True;
   end
   else
     Abort;
@@ -155,6 +162,7 @@ begin
   messagedlg('Registro salvo com sucesso!', mtInformation, [mbOk], 0);
   pnlDados.enabled := False;
   dbNavigator.Enabled := True;
+  FormShow(nil);
 end;
 
 procedure TFrmPrincipal.btnMostraSenhaClick(Sender: TObject);
@@ -172,7 +180,13 @@ begin
   qryGeralCODUSUARIO.AsInteger := prox;
   pnlDados.Enabled := True;
   dbNavigator.Enabled := false;
-  if txtNome.CanFocus then txtNome.SetFocus;
+  btnNovo.Enabled := False;
+  btnEditar.Enabled := False;
+  btnDeletar.Enabled := False;
+  btnAtualizar.Enabled := False;
+  btnPesquisar.Enabled := False;
+  btnGravar.Enabled := True;
+  if txtLogin.CanFocus then txtLogin.SetFocus;
   
 end;
 
@@ -199,6 +213,15 @@ begin
   QryGeral.Sql.Add('SELECT * FROM USUARIO ORDER BY CODUSUARIO');
   QryGeral.Open;
   QryGeral.First;
+
+  btnNovo.Enabled := True;
+  btnEditar.Enabled := True;
+  btnDeletar.Enabled := True;
+  btnGravar.Enabled := False;
+  btnCancelar.Enabled := True;
+  btnAtualizar.Enabled := True;
+  btnPesquisar.Enabled := True;
+
 end;
 
 end.

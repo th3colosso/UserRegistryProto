@@ -15,7 +15,6 @@ type
     Panel1: TPanel;
     btnSair: TBitBtn;
     btnEntrar: TBitBtn;
-    Image1: TImage;
     Panel2: TPanel;
     txtUsuario: TEdit;
     txtSenha: TEdit;
@@ -23,6 +22,7 @@ type
     Label2: TLabel;
     qryLogin: TFDQuery;
     StatusBar: TStatusBar;
+    Image1: TImage;
     procedure btnSairClick(Sender: TObject);
     procedure btnEntrarClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
