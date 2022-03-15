@@ -94,6 +94,7 @@ end;
 
 procedure TFrmLogin.FormShow(Sender: TObject);
 begin
+  FrmPrincipal.conexao.Params.Database := ExtractFilePath(Application.ExeName) + 'Banco\DB_UserManagementSystem.FDB';
   FrmPrincipal.conexao.Connected := true;
   if txtUsuario.CanFocus then txtUsuario.SetFocus;
 end;

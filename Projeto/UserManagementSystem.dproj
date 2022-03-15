@@ -83,8 +83,8 @@
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
-        <DCC_ExeOutput>C:\Users\matth\Documents\Embarcadero\Studio\Projects\TestePraticoCartSys\Exe\</DCC_ExeOutput>
-        <DCC_DcuOutput>C:\Users\matth\Documents\Embarcadero\Studio\Projects\TestePraticoCartSys\DCU\</DCC_DcuOutput>
+        <DCC_ExeOutput>C:\Users\matth\Documents\Embarcadero\Studio\Projects\UserRegistryProto\Exe\</DCC_ExeOutput>
+        <DCC_DcuOutput>C:\Users\matth\Documents\Embarcadero\Studio\Projects\UserRegistryProto\DCU\</DCC_DcuOutput>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1046</VerInfo_Locale>
         <Icon_MainIcon>UserManagementSystem_Icon.ico</Icon_MainIcon>

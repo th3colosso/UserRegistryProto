@@ -5,7 +5,7 @@ object FrmPrincipal: TFrmPrincipal
   BorderStyle = bsSingle
   Caption = 'UMS - User Management System'
   ClientHeight = 360
-  ClientWidth = 594
+  ClientWidth = 688
   Color = clBtnFace
   Constraints.MinWidth = 600
   Font.Charset = DEFAULT_CHARSET
@@ -22,7 +22,7 @@ object FrmPrincipal: TFrmPrincipal
   object StatusBar: TStatusBar
     Left = 0
     Top = 341
-    Width = 594
+    Width = 688
     Height = 19
     Hint = 'Inicia um novo cadastro'
     AutoHint = True
@@ -41,16 +41,18 @@ object FrmPrincipal: TFrmPrincipal
       end>
     ParentShowHint = False
     ShowHint = True
+    ExplicitWidth = 594
   end
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 594
+    Width = 688
     Height = 65
     Align = alTop
     Color = clSkyBlue
     ParentBackground = False
     TabOrder = 1
+    ExplicitWidth = 594
     object btnNovo: TBitBtn
       Left = 16
       Top = 14
@@ -125,12 +127,13 @@ object FrmPrincipal: TFrmPrincipal
   object Panel2: TPanel
     Left = 0
     Top = 299
-    Width = 594
+    Width = 688
     Height = 42
     Align = alBottom
     Color = clActiveCaption
     ParentBackground = False
     TabOrder = 2
+    ExplicitWidth = 594
     object btnSair: TBitBtn
       Left = 518
       Top = 5
@@ -154,11 +157,12 @@ object FrmPrincipal: TFrmPrincipal
   object pnlDados: TPanel
     Left = 0
     Top = 65
-    Width = 594
+    Width = 688
     Height = 234
     Align = alClient
     Enabled = False
     TabOrder = 3
+    ExplicitWidth = 594
     object Label1: TLabel
       Left = 44
       Top = 14
@@ -463,7 +467,7 @@ object FrmPrincipal: TFrmPrincipal
     object qryGeralTELEFONE: TStringField
       FieldName = 'TELEFONE'
       Origin = 'TELEFONE'
-      EditMask = '!\(99\)00000-0000;1;_'
+      EditMask = '!\(##\)#####-####;1;_'
       Size = 15
     end
     object qryGeralLOGIN: TStringField
