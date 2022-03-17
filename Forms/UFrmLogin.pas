@@ -47,8 +47,7 @@ uses
 procedure TFrmLogin.btnEntrarClick(Sender: TObject);
 var podeLogar : Boolean;
 begin
-
-  if (length(trim(txtUsuario.text)) = 0) or (length(trim(txtSenha.text)) = 0) then
+  if not (length(trim(txtUsuario.text)) > 0) or not (length(trim(txtSenha.text)) > 0) then
   begin
     application.MessageBox('Favor preencher os campos de login corretamente!', 'A T E N Ç Ã O');
     Abort;
@@ -79,6 +78,7 @@ begin
   if podeLogar then
   begin
     FrmPrincipal.Show;
+    FrmLogin.Hide;
   end
   else
   begin

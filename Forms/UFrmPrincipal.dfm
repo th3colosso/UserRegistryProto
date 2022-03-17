@@ -294,7 +294,6 @@ object FrmPrincipal: TFrmPrincipal
       Height = 21
       DataField = 'EMAIL'
       DataSource = dsUsuario
-      MaxLength = 100
       TabOrder = 6
       OnExit = txtEmailExit
     end
@@ -314,7 +313,6 @@ object FrmPrincipal: TFrmPrincipal
       Height = 21
       DataField = 'NOME'
       DataSource = dsUsuario
-      MaxLength = 100
       TabOrder = 3
     end
     object txtSenha: TDBEdit

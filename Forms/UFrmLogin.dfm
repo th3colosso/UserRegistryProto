@@ -27,7 +27,6 @@ object FrmLogin: TFrmLogin
     Color = clHotLight
     ParentBackground = False
     TabOrder = 0
-    ExplicitWidth = 294
     object Image1: TImage
       Left = 21
       Top = 221
@@ -261,6 +260,7 @@ object FrmLogin: TFrmLogin
         Top = 43
         Width = 185
         Height = 21
+        MaxLength = 20
         TabOrder = 0
         OnKeyPress = txtUsuarioKeyPress
       end
@@ -269,6 +269,7 @@ object FrmLogin: TFrmLogin
         Top = 108
         Width = 185
         Height = 21
+        MaxLength = 15
         PasswordChar = '*'
         TabOrder = 1
         OnKeyPress = txtSenhaKeyPress
@@ -286,7 +287,6 @@ object FrmLogin: TFrmLogin
         Text = 'Desenvolvido por Matheus Correa - 2022 '#174
         Width = 50
       end>
-    ExplicitWidth = 294
   end
   object qryLogin: TFDQuery
     Connection = FrmPrincipal.conexao
